@@ -1,0 +1,6 @@
+{
+  "name": "AnimeCro",
+  "version": "1.0",
+  "description": "إضافة CloudStream لموقع AnimeCro",
+  "main": "AnimeCro.kt"
+}
