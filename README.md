@@ -10,5 +10,5 @@ A CloudStream extension for the Arabic anime site [AnimeCro](https://web.animerc
 
 ## 📥 How to Install
 
-1. Upload the files to GitHub under a public repository (e.g. `yourusername/animecro`).
+1. Upload the files to GitHub under a public repository (e.g. `hicham8367/animecro`).
 2. Copy the raw URL of `repo.json`. It will look like:
