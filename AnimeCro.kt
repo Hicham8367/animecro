@@ -31,14 +31,20 @@ class AnimeCro : MainAPI() {
         }
     }
 
-    override suspend fun loadLinks(episodeUrl: String, referer: String?, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit) {
+    override suspend fun loadLinks(
+        episodeUrl: String,
+        referer: String?,
+        isCasting: Boolean,
+        subtitleCallback: (SubtitleFile) -> Unit,
+        callback: (ExtractorLink) -> Unit
+    ) {
         val doc = app.get(episodeUrl).document
         val servers = doc.select(".server a")
         for (server in servers) {
-            val name = server.text()
-            val url = server.absUrl("data-video").ifEmpty { server.absUrl("href") }
-            if (url.isNotEmpty()) {
-                callback(ExtractorLink(name, url, name, url, false))
+            val serverName = server.text()
+            val videoUrl = server.absUrl("data-video").ifEmpty { server.absUrl("href") }
+            if (videoUrl.isNotEmpty()) {
+                callback(ExtractorLink(serverName, videoUrl, serverName, videoUrl, false))
             }
         }
     }
