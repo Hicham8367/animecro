@@ -1,0 +1,6 @@
+{
+  "name": "AnimeCro",
+  "version": "1.0",
+  "description": "AnimeCro extension for CloudStream",
+  "main": "AnimeCro.kt"
+} 

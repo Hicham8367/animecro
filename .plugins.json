@@ -1,8 +1,0 @@
-{
-  "name": "AnimeCro",
-  "description": "إضافة CloudStream لموقع AnimeCro",
-  "manifestVersion": 1,
-  "pluginLists": [
-    "https://raw.githubusercontent.com/hicham8367/animecro/main/plugins.json"
-  ]
-}
