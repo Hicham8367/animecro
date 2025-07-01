@@ -15,7 +15,9 @@ class AnimeCro : MainAPI() {
             val title = it.selectFirst("h3")!!.text()
             val link = it.selectFirst("a")!!.absUrl("href")
             val poster = it.selectFirst("img")!!.absUrl("src")
-            newAnimeSearchResponse(title, link) { this.posterUrl = poster }
+            newAnimeSearchResponse(title, link) {
+                this.posterUrl = poster
+            }
         }
     }
 
@@ -42,7 +44,8 @@ class AnimeCro : MainAPI() {
         val servers = doc.select(".server a")
         for (server in servers) {
             val serverName = server.text()
-            val videoUrl = server.absUrl("data-video").ifEmpty { server.absUrl("href") }
+            val videoUrl = server.absUrl("data-video")
+                .ifEmpty { server.absUrl("href") }
             if (videoUrl.isNotEmpty()) {
                 callback(ExtractorLink(serverName, videoUrl, serverName, videoUrl, false))
             }
