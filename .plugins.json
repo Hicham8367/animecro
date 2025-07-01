@@ -1,6 +1,8 @@
 {
   "name": "AnimeCro",
-  "version": "1.0",
   "description": "إضافة CloudStream لموقع AnimeCro",
-  "main": "AnimeCro.kt"
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/hicham8367/animecro/main/plugins.json"
+  ]
 }
