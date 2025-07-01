@@ -3,6 +3,6 @@
   "description": "CloudStream extension for AnimeCro",
   "manifestVersion": 1,
   "pluginLists": [
-    "https://raw.githubusercontent.com/yourusername/animecro/main/plugins.json"
+    "https://raw.githubusercontent.com/hicham8367/animecro/main/plugins.json"
   ]
 } 
