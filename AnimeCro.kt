@@ -1,4 +1,4 @@
-package com.Hicham8367.animecro
+package com.hicham8367.animecro
 
 import com.lagradost.cloudstream3.*
 import com.lagradost.cloudstream3.utils.*
